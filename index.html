@@ -40,7 +40,7 @@
         <section class="section hero">
             <div class="hero-content conteiner">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="modal-button" type="button">Замовити послугу</button>
+            <button class="modal-button" type="button" data-modal-open>Замовити послугу</button>
         </div>
         </section>
         <section class="section">
@@ -90,14 +90,17 @@
             <div class="conteiner">
             <h2 class="section-title">Чим ми займаємося</h2>
             <ul class="img-list list">
-                <li>
+                <li class="about-item">
                     <img class="img-about" src="./img/верстка.jpg" alt="верстка" width="370">
+                    <p class="about-text">Десктопні додатки</p>
                 </li>
-                <li>
+                <li class="about-item">
                     <img class="img-about" src="./img/адаптація.jpg" alt="адаптація" width="370">
+                    <p class="about-text">Мобільні додатки</p>
                 </li>
-                <li>
+                <li class="about-item">
                     <img class="img-about" src="./img/графічні_роботи.jpg" alt="графічні роботи" width="370">
+                    <p class="about-text">Дизайнерські рішення</p>
                 </li>
             </ul>
         </div>
@@ -342,7 +345,16 @@
         </ul>
     </div>
     </div>
-    
     </footer>
+    <div class="backdrop" data-modal>
+        <div class="modal">
+            <button class="close-modal" type="button" data-modal-close>
+                <svg class="modal-close-icon" width="18" height="18">
+                    <use href="./img/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
