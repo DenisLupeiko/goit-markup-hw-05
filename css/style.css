@@ -229,20 +229,7 @@ color: var(--accent-color);
     fill: var(--accent-color);
 }
 
-.contact-mail-footer:hover,
-.contact-mail-footer:focus {
-    color: var(--accent-color);
-}
 
-.contact-tel-footer:hover,
-.contact-tel-footer:focus {
-    color: var(--accent-color);
-}
-
-.contact-adress:hover,
-.contact-adress:focus{
-    color:var(--accent-color);
-}
 
 /*    Hero    */
 
@@ -289,6 +276,7 @@ color: var(--accent-color);
     border-radius: 4px;
     border: none;
 }
+
 
 /* work*/
 .benefits-img-list{
@@ -418,6 +406,7 @@ color: var(--accent-color);
 
 .svg-social {
     fill: #AFB1B8;
+    transition: fill 250ms var(--timing-function);
 }
 
 .social-link {
@@ -427,7 +416,7 @@ color: var(--accent-color);
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+    transition: background-color 250ms var(--timing-function);
 }
 
 .social-link:hover,
@@ -510,13 +499,14 @@ color: var(--accent-color);
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    transition: fill 250ms var(--timing-function), border 250ms var(--timing-function);
+    transition: border 250ms var(--timing-function);
 }
 
 .client-svg {
     width: 106px;
     height: 60px;
     fill: #AFB1B8;
+    transition: fill 250ms var(--timing-function);
 }
 
 .client-link:hover .client-svg,
@@ -671,6 +661,7 @@ transform: translateY(0%);
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms var(--timing-function);
 }
 
 .contact-tel-footer {
@@ -679,7 +670,23 @@ transform: translateY(0%);
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms var(--timing-function);
 }
+
+.contact-mail-footer:hover,
+.contact-mail-footer:focus {
+    color: var(--accent-color);
+}
+
+.contact-tel-footer:hover,
+.contact-tel-footer:focus {
+    color: var(--accent-color);
+}
+
+/*.contact-adress:hover,
+.contact-adress:focus {
+    color: var(--accent-color);
+}*/
 
 .logo-footer {
     font-family: 'Raleway';
